@@ -76,7 +76,13 @@
 <div class="plate"></div>
 
 
-<audio src="music/3.mp3" autoplay="true" loop="true"></audio>
+<audio id="bg_music"src="music/3.mp3" autoplay="true" loop="true"></audio>
+<script>
+    var audio = document.getElementById("bg_music");
+    document.addEventListener('click', function(){
+        audio.play();
+    });
+</script>
 </body>
 
 </html>
